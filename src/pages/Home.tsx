@@ -20,9 +20,9 @@ export default function Home() {
           <p className="text-center text-sm font-normal pb-5"> Level : Hard</p>
           <Link
             to=""
-            className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3"
+            className="bg-neutral-400 hover:bg-blue-700 text-center text-white p-3 pointer-events-none"
           >
-            Know More
+            Coming Soon
           </Link>
         </div>
         {/*  */}
@@ -33,9 +33,9 @@ export default function Home() {
           <p className="text-center text-sm font-normal pb-5"> Level : Hard</p>
           <Link
             to=""
-            className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3"
+            className="bg-neutral-400 hover:bg-blue-700 text-center text-white p-3 pointer-events-none"
           >
-            Know More
+            Coming Soon
           </Link>
         </div>
         {/*  */}
@@ -46,9 +46,9 @@ export default function Home() {
           <p className="text-center text-sm font-normal pb-5"> Level : Hard</p>
           <Link
             to=""
-            className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3"
+            className="bg-neutral-400 hover:bg-blue-700 text-center text-white p-3 pointer-events-none"
           >
-            Know More
+            Coming Soon
           </Link>
         </div>
         {/*  */}
@@ -59,9 +59,9 @@ export default function Home() {
           <p className="text-center text-sm font-normal pb-5">Level : Medium</p>
           <Link
             to=""
-            className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3"
+            className="bg-neutral-400 hover:bg-blue-700 text-center text-white p-3 pointer-events-none"
           >
-            Know More
+            Coming Soon
           </Link>
         </div>
         {/*  */}
@@ -72,9 +72,9 @@ export default function Home() {
           <p className="text-center text-sm font-normal pb-5">Level : Medium</p>
           <Link
             to=""
-            className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3"
+            className="bg-neutral-400 hover:bg-blue-700 text-center text-white p-3 pointer-events-none"
           >
-            Know More
+            Coming Soon
           </Link>
         </div>
         {/*  */}
