@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function PageError() {
   return (
     <div>
@@ -29,7 +31,7 @@ export default function PageError() {
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span>Return Home</span>
+            <Link to="/">Return Home</Link>
           </a>
         </div>
       </div>

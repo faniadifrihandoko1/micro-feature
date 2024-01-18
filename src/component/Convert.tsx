@@ -61,6 +61,7 @@ const Convert: React.FC = () => {
               type="number"
               name="amount"
               className="border-2 border-slate-300 rounded-lg py-1 px-2 w-full"
+              placeholder="Input Amount"
             />
             <div className="flex justify-center my-4 gap-2 font-semibold">
               <select
