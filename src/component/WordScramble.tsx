@@ -50,7 +50,7 @@ const WordScramble: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mb-5  px-10  lg:px-24">
+      <div className=" mb-5  px-10  lg:px-24">
         <h1 className="text-center font-semibold text-3xl font-poppins my-8">
           Word <span className="text-red-500">Scramble</span>
         </h1>
