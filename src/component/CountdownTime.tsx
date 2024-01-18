@@ -9,6 +9,7 @@ const CountdownTime: React.FC = () => {
   const [timerMinutes, setTimerMinutes] = useState("00");
   const [timerSeconds, setTimerSeconds] = useState("00");
   const [timerStatus, setTimerStatus] = useState(0);
+  const [isCountdownActive, setIsCountdownActive] = useState(false);
   const formik = useFormik({
     initialValues: {
       time: "",
@@ -22,6 +23,7 @@ const CountdownTime: React.FC = () => {
         );
       }
       setTime(formik.values.time);
+      setIsCountdownActive(true);
     },
   });
 
@@ -31,6 +33,7 @@ const CountdownTime: React.FC = () => {
     setTimerHours("00");
     setTimerMinutes("00");
     setTimerSeconds("00");
+    setIsCountdownActive(false);
   };
 
   useEffect(() => {
@@ -86,16 +89,21 @@ const CountdownTime: React.FC = () => {
               placeholder="Input Amount"
             />
 
-            <div className="text-center flex my-3">
+            <div className="text-center flex my-3 gap-2">
               <button
                 type="submit"
-                className="bg-slate-900 hover:bg-slate-700 font-semibold p-1 w-[122px] sm:w-36 lg:w-44 mx-auto rounded-lg text-white"
+                disabled={isCountdownActive} // Disable button when countdown is active
+                className={`${
+                  isCountdownActive
+                    ? "bg-gray-500"
+                    : "bg-gray-900 hover:bg-blue-700"
+                } font-semibold p-1 w-1/2  mx-auto rounded-lg text-white`}
               >
                 Start
               </button>
               <button
                 onClick={setButtonReset}
-                className="bg-white border-2 border-gray-900 hover:bg-gray-900  hover:text-white font-semibold p-1 w-[122px] sm:w-36 lg:w-44 mx-auto rounded-lg text-black"
+                className="bg-white border-2 border-gray-900 hover:bg-gray-900  hover:text-white font-semibold p-1 w-1/2  mx-auto rounded-lg text-black"
               >
                 Reset
               </button>
