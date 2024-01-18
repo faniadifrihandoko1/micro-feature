@@ -5,6 +5,7 @@ import WordScramble from "./component/WordScramble";
 import MobileLegend from "./component/MobileLegend";
 import PageError from "./component/PageError";
 import Convert from "./component/Convert";
+import CountdownTime from "./component/CountdownTime";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/word-scramb" element={<WordScramble />} />
       <Route path="/mobile-legend" element={<MobileLegend />} />
       <Route path="/convert" element={<Convert />} />
+      <Route path="/countdown-time" element={<CountdownTime />} />
       <Route path="*" element={<PageError />} />
     </Routes>
   );
