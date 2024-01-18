@@ -4,6 +4,7 @@ import SalaryCount from "./component/SalaryCount";
 import WordScramble from "./component/WordScramble";
 import MobileLegend from "./component/MobileLegend";
 import PageError from "./component/PageError";
+import Convert from "./component/Convert";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/salary-count" element={<SalaryCount />} />
       <Route path="/word-scramb" element={<WordScramble />} />
       <Route path="/mobile-legend" element={<MobileLegend />} />
+      <Route path="/convert" element={<Convert />} />
       <Route path="*" element={<PageError />} />
     </Routes>
   );

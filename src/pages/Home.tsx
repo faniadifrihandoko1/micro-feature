@@ -71,10 +71,10 @@ export default function Home() {
           <h2 className="text-center px-2 pb-2">Currency Convert</h2>
           <p className="text-center text-sm font-normal pb-5">Level : Medium</p>
           <Link
-            to=""
-            className="bg-neutral-400 hover:bg-blue-700 text-center text-white p-3 pointer-events-none"
+            to="/convert"
+            className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3"
           >
-            Coming Soon
+            Know More
           </Link>
         </div>
         {/*  */}
