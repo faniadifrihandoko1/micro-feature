@@ -15,6 +15,7 @@ const CountdownTime: React.FC = () => {
     },
     onSubmit: () => {
       console.log(formik.values);
+      formik.resetForm();
       if (timerStatus <= 0) {
         alert(
           "Pilihlah waktu di masa depan bukan masa lalu, karena waktu tidak bisa diulang kembali seperti hati yang kalau sudah patah, sulit banget diperbaiki. Ingat, jangan biarkan remote control kehidupan berada di tangan orang lain!"
