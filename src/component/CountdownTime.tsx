@@ -8,12 +8,18 @@ const CountdownTime: React.FC = () => {
   const [timerHours, setTimerHours] = useState("00");
   const [timerMinutes, setTimerMinutes] = useState("00");
   const [timerSeconds, setTimerSeconds] = useState("00");
+  const [timerStatus, setTimerStatus] = useState(0);
   const formik = useFormik({
     initialValues: {
       time: "",
     },
     onSubmit: () => {
       console.log(formik.values);
+      if (timerStatus <= 0) {
+        alert(
+          "Pilihlah waktu di masa depan bukan masa lalu, karena waktu tidak bisa diulang kembali seperti hati yang kalau sudah patah, sulit banget diperbaiki. Ingat, jangan biarkan remote control kehidupan berada di tangan orang lain!"
+        );
+      }
       setTime(formik.values.time);
     },
   });
@@ -32,6 +38,7 @@ const CountdownTime: React.FC = () => {
     const updateCountdown = () => {
       const now = new Date().getTime();
       const timeDifference = countdownDate - now;
+      setTimerStatus(timeDifference);
 
       if (timeDifference > 0) {
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
