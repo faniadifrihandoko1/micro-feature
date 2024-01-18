@@ -81,13 +81,13 @@ const CountdownTime: React.FC = () => {
             <div className="text-center flex my-3">
               <button
                 type="submit"
-                className="bg-slate-900 hover:bg-slate-700 font-semibold p-1 w-36 lg:w-44 mx-auto rounded-lg text-white"
+                className="bg-slate-900 hover:bg-slate-700 font-semibold p-1 w-[122px] sm:w-36 lg:w-44 mx-auto rounded-lg text-white"
               >
-                Convert
+                Start
               </button>
               <button
                 onClick={setButtonReset}
-                className="bg-white border-2 border-gray-900 hover:bg-gray-900  hover:text-white font-semibold p-1 w-36 lg:w-44 mx-auto rounded-lg text-black"
+                className="bg-white border-2 border-gray-900 hover:bg-gray-900  hover:text-white font-semibold p-1 w-[122px] sm:w-36 lg:w-44 mx-auto rounded-lg text-black"
               >
                 Reset
               </button>
