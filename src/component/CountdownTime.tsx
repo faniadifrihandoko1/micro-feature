@@ -92,7 +92,7 @@ const CountdownTime: React.FC = () => {
             <div className="text-center flex my-3 gap-2">
               <button
                 type="submit"
-                disabled={isCountdownActive} // Disable button when countdown is active
+                disabled={isCountdownActive}
                 className={`${
                   isCountdownActive
                     ? "bg-gray-500"

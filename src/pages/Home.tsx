@@ -61,7 +61,7 @@ export default function Home() {
             to="/countdown-time"
             className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3 "
           >
-            Coming Soon
+            Know More
           </Link>
         </div>
         {/*  */}
