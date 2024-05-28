@@ -15,14 +15,17 @@ const Convert: React.FC = () => {
     },
     onSubmit: async () => {
       try {
-        const response = await axios.get(
-          `https://open.er-api.com/v6/latest/${formik.values.before}`
-        );
+        if (formik.values.before == formik.values.after) {
+          alert("pilih mata uang berbeda");
+        } else {
+          const response = await axios.get(
+            `https://open.er-api.com/v6/latest/${formik.values.before}`
+          );
 
-        const rate = response.data.rates[formik.values.after];
-        const convert = formik.values.amount * rate;
-
-        setHasil(convert);
+          const rate = response.data.rates[formik.values.after];
+          const convert = formik.values.amount * rate;
+          setHasil(convert);
+        }
       } catch (error) {
         console.error(error);
       }

@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import word from "../assets/word.svg";
 import game from "../assets/game3.svg";
 import ml from "../assets/sword.svg";
-import mc from "../assets/game4.svg";
+// import mc from "../assets/game4.svg";
 import count from "../assets/duration.svg";
 import convert from "../assets/convert.svg";
 import salary from "../assets/salary-wage-svgrepo-com.svg";
 export default function Home() {
   return (
-    <div className="w-full min-h-screen p-6 font-poppins">
+    <div className=" w-full min-h-screen p-6  font-poppins">
       <h1 className="font-bold text-xl lg:text-3xl text-center">
         Challange <span className="text-red-500">on Task</span>
       </h1>
@@ -19,10 +19,10 @@ export default function Home() {
           <h2 className="text-center px-2 pb-2">Game Tic Tac Toe</h2>
           <p className="text-center text-sm font-normal pb-5"> Level : Hard</p>
           <Link
-            to=""
-            className="bg-neutral-400 hover:bg-blue-700 text-center text-white p-3 pointer-events-none"
+            to="/tictactoe"
+            className="bg-blue-500 hover:bg-blue-700 text-center text-white p-3 "
           >
-            Coming Soon
+            Know More
           </Link>
         </div>
         {/*  */}
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         {/*  */}
         {/* Matching Card */}
-        <div className="flex flex-col bg-white mb-9 rounded-lg shadow-lg w-full m-6 overflow-hidden sm:w-96 sm:mx-auto">
+        {/* <div className="flex flex-col bg-white mb-9 rounded-lg shadow-lg w-full m-6 overflow-hidden sm:w-96 sm:mx-auto">
           <img className="h-20 m-6" src={mc} alt="" />
           <h2 className="text-center px-2 pb-2">Matching Card</h2>
           <p className="text-center text-sm font-normal pb-5"> Level : Hard</p>
@@ -50,7 +50,7 @@ export default function Home() {
           >
             Coming Soon
           </Link>
-        </div>
+        </div> */}
         {/*  */}
         {/* Count Duration */}
         <div className="flex flex-col bg-white mb-9 rounded-lg shadow-lg w-full m-6 overflow-hidden sm:w-96 sm:mx-auto">
