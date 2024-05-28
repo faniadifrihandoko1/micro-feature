@@ -1,12 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "./Navbar";
 
 export default function TicTacToe() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
-  function calculateWinner(squares: any) {
+  function calculateWinner(squares: (string | null)[]) {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -34,7 +33,7 @@ export default function TicTacToe() {
     window.location.reload();
   };
 
-  const onHandleClick = (i: any) => {
+  const onHandleClick = (i: number) => {
     if (squares[i]) {
       return;
     }

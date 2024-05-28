@@ -1,6 +1,6 @@
 import React from "react";
 
-import { isPeople as isProps } from "../pages/pageList";
+import { isPeople as isProps } from "../pages/PageList";
 
 const List: React.FC<isProps> = ({ people }) => {
   const renderPeople = (): JSX.Element[] => {
